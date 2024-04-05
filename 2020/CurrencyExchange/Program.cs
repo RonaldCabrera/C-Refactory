@@ -2,9 +2,9 @@
 using System.Net.Http.Json;
 
 const string url = "https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest/USD";
-using (var webClient = new HttpClient())
+using (var httpClient = new HttpClient())
 {
-    var currency = await webClient.GetFromJsonAsync<CurrencyModel>(url);
+    var currency = await httpClient.GetFromJsonAsync<CurrencyModel>(url);
     if(currency is null)
     {
         Console.WriteLine($"Something went wrong while requesting the currency data.");

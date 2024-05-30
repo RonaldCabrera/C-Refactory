@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "How can you make a program that sums two numbers in C#?";
+}
+
+<article>
+    <header class="row">
+        <h1>@ViewData["Title"]</h1>
+    </header>
+    <section>
+        <p>
+            <ol>
+                <li>
+                    We define the variables as input, meaning they will store what the user enters.
+                </li>
+                <li>
+                    We create a new variable (in my case, sum) to store the result of the numerical addition of what is stored in those variables.<br />
+                    <strong> (You cannot simply write <code>sum = (n1) + (n2)</code> you must first make the program read them as numbers. For this, use the float or int type.) </strong>
+                </li>
+                <li>
+                    Finally, simply write the print command with the variable that stores the result (in my case, sum).
+                </li>
+            </ol>
+            <h3>Code-wise it would look something like:</h3>
+            <pre>
+                <var>int a = 1;</var>
+                <var>int b = 2;</var>
+                <var>int sum = a + b;</var>
+                <code>Console.WriteLine(sum);</code>
+                <samp class="bg-dark bg-opacity-50 rounded text-success px-5">3.</samp>
+            </pre>
+        </p>
+        <div class="text-center">
+            <img src="/media/images/seventh.png" width="350" loading="lazy" title="Seventh Image" alt="An image of PSeInt" />
+        </div>
+        <div class="py-3 text-center">
+            <a asp-action="Sixth" class="btn btn-outline-secondary rounded-pill px-5 shadow me-5">← Previous</a>
+        </div>
+    </section>
+</article>

@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "What is a flow diagram?";
+}
+
+<article>
+    <header class="row">
+        <h1>@ViewData["Title"]</h1>
+    </header>
+    <section>
+        <p>
+            A flowchart is the graphical representation of an algorithm or process. It is used in disciplines such as programming, economics, industrial processes, and cognitive psychology.
+        </p>
+        <div class="text-center">
+            <img src="/media/images/third.png" width="450" loading="lazy" title="Third Image" alt="A PSeInt Flow Diagram" />
+        </div>
+        <div class="py-3 text-center">
+            <a asp-action="Second" class="btn btn-outline-secondary rounded-pill px-5 shadow me-5">← Previous</a>
+            <a asp-action="Fourth" class="btn btn-outline-primary rounded-pill px-5 shadow ms-5">Next →</a>
+        </div>
+    </section>
+</article>

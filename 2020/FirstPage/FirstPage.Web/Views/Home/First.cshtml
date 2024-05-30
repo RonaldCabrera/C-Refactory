@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "What is programming, exactly?";
+}
+
+<article>
+    <header class="row">
+        <h1>@ViewData["Title"]</h1>
+    </header>
+    <section>
+        <p>
+            Programming is the act of planning and/or writing a series of instructions, 
+            with the aim that a machine can interpret these instructions and execute them in an automated manner with a goal in mind, 
+            often displaying a result.
+        </p>
+        <div class="text-center">
+            <img src="/media/images/first.jpg" width="600" loading="lazy" title="First Image" alt="Man using an IDE on a Laptop" />
+        </div>
+        <div class="py-3 text-center">
+            <a asp-action="Index" class="btn btn-outline-secondary rounded-pill px-5 shadow me-5">← Index</a>
+            <a asp-action="Second" class="btn btn-outline-primary rounded-pill px-5 shadow ms-5">Next →</a>
+        </div>
+    </section>
+</article>

@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "What can be done with C# currently?";
+}
+
+<article>
+    <header class="row">
+        <h1>@ViewData["Title"]</h1>
+    </header>
+    <section>
+        <p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <strong>Windows Applications:</strong> C# is often used to create desktop applications for Windows.
+                </li>
+                <li class="list-group-item">
+                    <strong>Web Applications:</strong> Using ASP.NET, C# can be used to build dynamic websites and web applications.
+                </li>
+                <li class="list-group-item">
+                    <strong>Mobile Applications:</strong> With Xamarin, C# can be used to create cross-platform mobile applications for iOS, Android, and Windows.
+                </li>
+                <li class="list-group-item">
+                    <strong>Game Development:</strong> C# is a popular language for game development, especially with the Unity game engine.
+                </li>
+                <li class="list-group-item">
+                    <strong>Cloud-Based Applications:</strong> C# can be used to develop cloud-based applications with Azure.
+                </li>
+            </ul>
+        </p>
+        <div class="text-center">
+            <img src="/media/images/sixth.jpg" width="350" loading="lazy" title="Sixth Image" alt="An image of PSeInt" />
+        </div>
+        <div class="py-3 text-center">
+            <a asp-action="Fifth" class="btn btn-outline-secondary rounded-pill px-5 shadow me-5">← Previous</a>
+            <a asp-action="Seventh" class="btn btn-outline-primary rounded-pill px-5 shadow ms-5">Next →</a>
+        </div>
+    </section>
+</article>

@@ -2,7 +2,7 @@
 
 public class AgeGate
 {
-    private static readonly DateTime _today = DateTime.Now;
+    private static readonly DateTime _today = DateTime.Today;
     private static DateTime _birthdayDate;
 
     public static void Run()
@@ -12,18 +12,18 @@ public class AgeGate
         {
             PrintNumberLine("first");
         }
-
-        int ageDifference = _today.Year - _birthdayDate.Year;
-        int monthDifference = _today.Month - _birthdayDate.Month;
-        if (ageDifference <= 0)
+        
+        if (_birthdayDate > _today)
         {
             Console.WriteLine("TIME TRAVELER (OR SUPERHUMAN INFANT) DETECTED, SHUTTING DOWN COMPUTER IN in 3....2....1....");
         }
-        else if (ageDifference < 18)
+
+        int age = _today.AddTicks(-_birthdayDate.Ticks).Year - 1;
+        if (age < 18)
         {
             Console.WriteLine("Oi, you're underage! (In most countries)");
         }
-        else if (ageDifference >= 18 || (ageDifference == 17  && monthDifference == 0))
+        else
         {
             Console.WriteLine("Come right in, human individual of enough age to vote.");
         }

@@ -8,5 +8,5 @@
 //ReverseText.Run();
 //Hypotenuse.Run();
 //GeneralFormula.Run();
-//AgeGate.Run();
-ThirteenTables.Run();
+AgeGate.Run();
+//ThirteenTables.Run();

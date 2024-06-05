@@ -16,6 +16,7 @@ public class AgeGate
         if (_birthdayDate > _today)
         {
             Console.WriteLine("TIME TRAVELER (OR SUPERHUMAN INFANT) DETECTED, SHUTTING DOWN COMPUTER IN in 3....2....1....");
+            return;
         }
 
         int age = _today.AddTicks(-_birthdayDate.Ticks).Year - 1;
